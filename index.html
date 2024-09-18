@@ -51,6 +51,23 @@
         background-color: rgb(244, 143, 160);
         color: white;
     }
+
+    @media screen and (max-width: 630px) {
+        form {
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .multiplication-table {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
 </style>
 
 <body>
@@ -58,8 +75,8 @@
     <h1>Multiplication Table Generator</h1>
     
     <form action="">
-       <label for="width">Insert width:</label> <input type="number" name="width" id="width" onkeydown="handleCalcKeydown(event)">
-       <label for="length">Insert length:</label> <input type="number" name="length" id="length" onkeydown="handleCalcKeydown(event)">
+       <label for="width">Insert width: <input type="number" name="width" id="width" onkeydown="handleCalcKeydown(event)"></label> 
+       <label for="length">Insert length: <input type="number" name="length" id="length" onkeydown="handleCalcKeydown(event)"></label> 
 
         <div class="button"> 
             <input type="button" value="Display" id="display-button">
